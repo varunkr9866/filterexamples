@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	
+	<servlet>
+		<servlet-name>s1</servlet-name>
+		<servlet-class>com.cluster.Servlet1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>s1</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>s2</servlet-name>
+		<servlet-class>com.cluster.Servlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>s2</servlet-name>
+		<url-pattern>/second</url-pattern>
+	</servlet-mapping>
+	
+	<filter>
+		<filter-name>f3</filter-name>
+		<filter-class>com.cluster.Filter3</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>f3</filter-name>
+		<url-pattern>/login</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>f1</filter-name>
+		<filter-class>com.cluster.Filter1</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>f1</filter-name>
+		<url-pattern>/login</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>f2</filter-name>
+		<filter-class>com.cluster.Filter2</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>f2</filter-name>
+		<url-pattern>/login</url-pattern>
+	</filter-mapping>
+	
+</web-app>
